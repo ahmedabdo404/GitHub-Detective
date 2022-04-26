@@ -1,0 +1,40 @@
+:root {
+--bg-color: rgb(27, 27, 27)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-align: start !important;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color) !important;
+  min-height: 100vh;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.inputs {
+  height: fit-content;
+}
+
+.results {
+  height: auto;
+}
+
+.content {
+  margin-top: 1.5rem !important;
+  text-align: start !important;
+}
+
+.bx-search-alt {
+  font-size: 50px;
+}
