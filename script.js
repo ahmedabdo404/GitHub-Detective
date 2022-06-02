@@ -68,10 +68,10 @@ function showRecords(Array) {
     for (const [i, c] of Array.entries()) {
       details.innerHTML += `
     <div class="content col-12 col-md-6 ">
-      <h4>Repo: ${i+1}</h4>
+      <h4>Repo: ${i + 1}</h4>
       <h6>Repo ID: ${c.id}</h6>
       <h6>Repo Name: ${c.name}</h6>
-      <a class="btn btn-link p-0" href="${c.html_url}" target="_blank"><h6>Repo URL: ${c.html_url}</h6></a>
+      <h6>Repo URL: <a class="btn btn-link p-0 mb-1" href="${c.html_url}" target="_blank">${c.html_url}</a></h6>
       <h6>Repo Visibility: ${c.visibility}</h6>
       <h6>Repo description: ${c.description ? c.description : "None"}</h6>
       <h6>Repo Most written language: ${c.language ? c.language : "Unkonwn"}</h6>
@@ -83,4 +83,3 @@ function showRecords(Array) {
   }
 }
 //#endregion
-
